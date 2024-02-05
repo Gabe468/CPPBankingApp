@@ -10,8 +10,9 @@ int main(){
     
     cin >> ans;
 
-    if (ans == 1){
-        BankAccount account;
-        account.display();
+    switch (ans){
+        case 1:
+            BankAccount account;
+            cout << "WELCOME " + account.getUserName();
     }
 }

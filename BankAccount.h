@@ -27,7 +27,7 @@ class BankAccount{
                 cout << "Confirm Password:" << endl;
                 cin >> cPassWord;
                 if (cPassWord != passWord){
-                    cout << "INCORRECT PASSWORD" << endl;
+                    cout << "PASSWORDS DO NOT MATCH" << endl;
                 }else{
                   i++;  
                 }
@@ -38,6 +38,10 @@ class BankAccount{
     
     void display(){
         cout <<userName << endl << passWord << endl << ctime(&createdDate);
+    }
+
+    string getUserName(){
+        return userName;
     }
 };
 
